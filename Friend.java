@@ -1,7 +1,14 @@
 import java.util.Scanner;
 
 class Friend{
-
+    
+     //-------------------CREATE AN ARRAYS ----------------
+     public static String[] idArray = new String[0];
+     public static String[] nameArray=new String[0];
+     public static String[] phoneNumberArray=new String[0];
+     public static String[] companyNameArray=new String[0];
+     public static double[] salaryArray=new double[0];
+     public static String[] birthdayArray=new String[0];
 
     //----------------------CLEAR CONSOLE --------------------
     public final static void clearConsole() { 
