@@ -30,6 +30,17 @@ class Friend{
         homePage();
     }
 
+    //-------------------GENERATE ID----------------
+    public static String generateId(){
+        if(idArray.length == 0){
+            return "C0001";
+        }
+        String lastid = idArray[idArray.length-1];
+        int lastno = Integer.parseInt(lastid.substring(1));
+        return String.format("C0%4d", lastno+1);
+        
+    }
+
     public static void  homePage(){
         Scanner input = new Scanner(System.in);
         System.out.println("================iFRIEND CONTACTS ORGANIZER =================");
@@ -53,10 +64,23 @@ class Friend{
             }
         }
     
+    private static void addContact() {
+    
+    }
 
-    private static void exit() {
+    private static void updateContact() {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'exit'");
+        throw new UnsupportedOperationException("Unimplemented method 'updateContact'");
+    }
+
+    private static void deleteContact() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'deleteContact'");
+    }
+    
+    private static void searchContact() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'searchContact'");
     }
 
     private static void listContact() {
@@ -64,25 +88,12 @@ class Friend{
         throw new UnsupportedOperationException("Unimplemented method 'listContact'");
     }
 
-    private static void searchContact() {
+    private static void exit() {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'searchContact'");
+        throw new UnsupportedOperationException("Unimplemented method 'exit'");
     }
 
-    private static void deleteContact() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'deleteContact'");
-    }
-
-    private static void addContact() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'addContact'");
-    }
-
-    private static void updateContact() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'updateContact'");
-    }
+    
 
     
 
