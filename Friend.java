@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 class Friend{
+
     public static void main(String[] args) {
         homePage();
     }
@@ -23,7 +24,8 @@ class Friend{
             case 3 : deleteContact(); break;
             case 4 : searchContact(); break;
             case 5 : listContact(); break;
-            case 6 : exit(); 
+            case 6 : exit(); break;
+            default : System.out.println("Invalid option...");break;
             }
         }
     
